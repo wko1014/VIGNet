@@ -6,7 +6,6 @@ This repository provides a TensorFlow implementation of the following paper:
 > [Wonjun Ko](https://scholar.google.com/citations?user=Fvzg1_sAAAAJ&hl=ko&oi=ao)<sup>1</sup>, [Kwanseok Oh](https://scholar.google.com/citations?user=EMYHaHUAAAAJ&hl=ko)<sup>2</sup>, [Eunjin Jeon](https://scholar.google.com/citations?user=U_hg5B0AAAAJ&hl=ko)<sup>1</sup>, [Heung-Il Suk](https://scholar.google.co.kr/citations?user=dl_oZLwAAAAJ&hl=ko)<sup>1, 2</sup><br/>
 > (<sup>1</sup>Department of Brain and Cognitive Engineering, Korea University) <br/>
 > (<sup>2</sup>Department of Artificial Intelligence, Korea University) <br/>
-> [[Official version]](https://ieeexplore.ieee.org/abstract/document/9403717)
 > [[Official version]](https://ieeexplore.ieee.org/abstract/document/9061668)
 > Presented in the 8th IEEE International Winter Conference on Brain-Computer Interface (BCI)
 > 
@@ -18,32 +17,21 @@ This repository provides a TensorFlow implementation of the following paper:
 * [TensorFlow 2.0.0+](https://www.tensorflow.org/)
 
 ## Downloading datasets
-To download GIST-MI dataset
-* http://gigadb.org/dataset/100295
-
-To download KU-MI/SSVEP dataset
-* http://gigadb.org/dataset/100542
-
 To download SEED-VIG dataset
 * https://bcmi.sjtu.edu.cn/~seed/seed-vig.html
 
-To download CHB-MIT dataset
-* https://physionet.org/content/chbmit/1.0.0/
-
 ## Citation
-If you find this work useful for your research, please cite our [paper](https://ieeexplore.ieee.org/abstract/document/9403717):
+If you find this work useful for your research, please cite our [paper](https://ieeexplore.ieee.org/abstract/document/9061668):
 ```
-@article{ko2021multi,
-  title={Multi-scale neural network for EEG representation learning in BCI},
-  author={Ko, Wonjun and Jeon, Eunjin and Jeong, Seungwoo and Suk, Heung-Il},
-  journal={IEEE Computational Intelligence Magazine},
-  volume={16},
-  number={2},
-  pages={31--45},
-  year={2021},
-  publisher={IEEE}
+@inproceedings{ko2020vignet,
+  title={Vignet: A deep convolutional neural network for eeg-based driver vigilance estimation},
+  author={Ko, Wonjun and Oh, Kwanseok and Jeon, Eunjin and Suk, Heung-Il},
+  booktitle={2020 8th International Winter Conference on Brain-Computer Interface (BCI)},
+  pages={1--3},
+  year={2020},
+  organization={IEEE}
 }
 ```
 
 ## Acknowledgements
-This work was supported by Institute for Information & Communications Technology Promotion (IITP) grant funded by the Korea government under Grant 2017-0-00451 (Development of BCI based Brain and Cognitive Computing Technology for Recognizing User’s Intentions using Deep Learning) and Grant 2019-0-00079 (Department of Artificial Intelligence, Korea University).
+This work was supported by the Institute of Information & Communications Technology Planning & Evaluation (IITP) grant funded by the Korea government (No. 2017-0-00451; Development of BCI based Brain and Cognitive Computing Technology for Recognizing User’s Intentions using Deep Learning).
