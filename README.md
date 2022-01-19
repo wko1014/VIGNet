@@ -1,5 +1,5 @@
 ## VIGNet: A Deep Convolutional Neural Network for EEG-based Driver Vigilance Estimation
-<p align="center"><img width="50%" src="files/framework.png" /></p>
+<p align="center"><img width="30%" src="files/framework.png" /></p>
 
 This repository provides a TensorFlow implementation of the following paper:
 > **VIGNet: A Deep Convolutional Neural Network for EEG-based Driver Vigilance Estimation**<br>
@@ -11,7 +11,6 @@ This repository provides a TensorFlow implementation of the following paper:
 > 
 > **Abstract:** *Estimating driver fatigue is an important issue for traffic safety and user-centered brain–computer interface. In this paper, based on differential entropy (DE) extracted from electroencephalography (EEG) signals, we develop a novel deep convolutional neural network to detect driver drowsiness. By exploiting DE of EEG samples, the proposed network effectively extracts class-discriminative deep and hierarchical features. Then, a densely-connected layer is used for the final decision making to identify driver condition. To demonstrate the validity of our proposed method, we conduct classification and regression experiments using publicly available SEED-VIG dataset. Further, we also compare the proposed network to other competitive state-of-the-art methods with an appropriate statistical analysis. Furthermore, we inspect the real-world usability of our method by visualizing a change in the probability of driver status and confusion matrices.*
 
-
 ## Dependencies
 * [Python 3.6+](https://www.continuum.io/downloads)
 * [TensorFlow 2.0.0+](https://www.tensorflow.org/)
@@ -19,6 +18,9 @@ This repository provides a TensorFlow implementation of the following paper:
 ## Downloading datasets
 To download SEED-VIG dataset
 * https://bcmi.sjtu.edu.cn/~seed/seed-vig.html
+
+## Usage
+`network.py` contains the proposed deep learning architectures, `utils.py` contains functions used for experimental procedures, and `experiment.py` contains the main experimental functions.
 
 ## Citation
 If you find this work useful for your research, please cite our [paper](https://ieeexplore.ieee.org/abstract/document/9061668):
