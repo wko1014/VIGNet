@@ -10,7 +10,8 @@ class vignet(tf.keras.Model):
 
         self.regularizer = tf.keras.regularizers.L1L2(l1=0.05, l2=0.005)
         self.activation = tf.nn.leaky_relu
-
+        
+        # Define convolution layers
         self.conv1 = tf.keras.layers.Conv2D(10, (1, 5), kernel_regularizer=self.regularizer, activation=self.activation)
         self.conv2 = tf.keras.layers.Conv2D(10, (1, 5), kernel_regularizer=self.regularizer, activation=self.activation)
         self.conv3 = tf.keras.layers.Conv2D(10, (1, 5), kernel_regularizer=self.regularizer, activation=self.activation)
