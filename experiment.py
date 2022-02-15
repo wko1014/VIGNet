@@ -61,18 +61,12 @@ class experiment():
 
                 # Update the network
                 optimizer.apply_gradients(zip(grads, VIGNet.trainable_variables))
-
                 loss_per_epoch += np.mean(loss)
 
-
             print("Epoch: {}, Training Loss: {:0.4}".format(epoch + 1, loss_per_epoch/num_batch_iter))
-
         print("\n")
-
-trial = 1
-cv = 0
-
+        
 for trial in range(1, 24):
-    for cv in range(5):
-        main = experiment(trial_idx=trial, cv_idx=cv, gpu_idx=0, task="CLF")
+    for fold in range(5):
+        main = experiment(trial_idx=trial, cv_idx=fold, gpu_idx=0, task='CLF') # task='RGS' for regression
         main.training()
