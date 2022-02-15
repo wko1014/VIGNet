@@ -24,6 +24,7 @@ class vignet(tf.keras.Model):
         elif self.mode == "RGS":
             self.dense = tf.keras.layers.Dense(1)
 
+    # Define multi-head residual spectro-spatio attention module
     def MHRSSA(self, x, out_filter, num_channel=17):
         for i in range(out_filter):
             tmp = tf.keras.layers.Conv2D(num_channel, (num_channel, 1), kernel_regularizer=self.regularizer, activation=None)(x)
