@@ -21,7 +21,7 @@ class vignet(tf.keras.Model):
 
         if self.mode == "CLF": # for 3-class classification task
             self.dense = tf.keras.layers.Dense(3)
-        elif self.mode == "RGS": # for regression task
+        elif self.mode == "RGS": # for PERCLOS score regression task
             self.dense = tf.keras.layers.Dense(1)
 
     # Define multi-head residual spectro-spatio attention module
