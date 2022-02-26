@@ -15,10 +15,10 @@ class experiment():
         # self.gpu_idx = gpu_idx
         # os.environ["CUDA_VISIBLE_DEVICES"] = str(self.gpu_idx)
         # tf.config.experimental.set_memory_growth(tf.config.experimental.list_physical_devices('GPU')[0], True)
-
+        
         self.trial_idx = trial_idx
         self.cv_idx = cv_idx
-        self.task = task
+        self.task = task # for controlling task of interests
 
         self.reg_label = False
 
