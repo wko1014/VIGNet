@@ -13,7 +13,7 @@ class load_dataset():
         self.reg_label = reg_label
         self.call_eeg = call_eeg
 
-        self.basePath = "/Define/your/own/path"
+        self.basePath = "/Define/your/own/path" # define the data path
 
     def call(self):
         EEG = loadmat(self.basePath + "/Raw_Data/{}.mat".format(self.trial))["EEG"]["data"][0][0]
