@@ -1,6 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
+# Define VIGNet
 class vignet(tf.keras.Model):
     def __init__(self, mode):
         tf.keras.backend.set_floatx("float64")
