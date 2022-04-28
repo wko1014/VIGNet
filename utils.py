@@ -1,9 +1,10 @@
-from scipy.io import loadmat
-
+# Import APIs
 import numpy as np
 import tensorflow as tf
 import seaborn as sns
 import matplotlib.pyplot as plt
+
+from scipy.io import loadmat
 
 class load_dataset():
     def __init__(self, trial, cv, type="de_LDS", reg_label=False, call_eeg=False):
